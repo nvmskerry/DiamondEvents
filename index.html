@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diamond Event Planning — Luxury Event Planners</title>
+
+  <!-- Basic SEO / Social -->
+  <meta name="description" content="Diamond Event Planning — Luxury event planning services that turn your dreams into reality. Weddings, corporate events, and special celebrations." />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Open Graph (social preview) -->
+  <meta property="og:title" content="Diamond Event Planning" />
+  <meta property="og:description" content="Luxury event planning services — Weddings, corporate events, and special celebrations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://diamondevents.com/" />
+  <meta property="og:image" content="https://diamondevents.com/og-image.jpg" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diamond Event Planning" />
+  <meta name="twitter:description" content="Luxury event planning services — Weddings, corporate events, and special celebrations." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body { box-sizing: border-box; }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .diamond-sparkle {
+      animation: sparkle 2s ease-in-out infinite;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%     { opacity: 0.7; transform: scale(1.1); }
+    }
+
+    .service-card { transition: all 0.3s ease; }
+    .service-card:hover { transform: translateY(-8px); }
+
+    .floating-animation { animation: float 3s ease-in-out infinite; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50%      { transform: translateY(-10px); }
+    }
+
+    /* small visual polish to ensure readable text on gradient sections */
+    .gradient-bg .text-purple-100 { color: rgba(241, 245, 249, 0.9); }
+  </style>
+ </head>
+
+ <body class="h-full font-sans">
+  <header class="gradient-bg text-white py-4 px-6 shadow-lg">
+   <nav class="max-w-7xl mx-auto flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+     <svg class="w-8 h-8 diamond-sparkle" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+       <path d="M12 2L8 8h8l-4-6zm0 20l4-6H8l4 6zm10-10l-6-4v8l6-4zM2 12l6 4V8l-6 4z" />
+     </svg>
+     <h1 id="company-name" class="text-2xl font-bold">Diamond Event Planning</h1>
+    </div>
+
+    <div class="hidden md:flex space-x-6">
+      <a href="#services" class="hover:text-purple-200 transition-colors">Services</a>
+      <a href="#about" class="hover:text-purple-200 transition-colors">About</a>
+      <a href="#contact" class="hover:text-purple-200 transition-colors">Contact</a>
+    </div>
+   </nav>
+  </header>
+
+  <main class="h-full">
+   <!-- Hero Section -->
+   <section class="gradient-bg text-white py-20 px-6">
+     <div class="max-w-7xl mx-auto text-center">
+       <div class="floating-animation mb-8">
+         <svg class="w-24 h-24 mx-auto mb-6 diamond-sparkle" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+           <path d="M12 2L8 8h8l-4-6zm0 20l4-6H8l4 6zm10-10l-6-4v8l6-4zM2 12l6 4V8l-6 4z" />
+         </svg>
+       </div>
+
+       <h2 id="hero-title" class="text-5xl md:text-6xl font-bold mb-6">Creating Unforgettable Moments</h2>
+       <p id="hero-subtitle" class="text-xl md:text-2xl mb-8 text-purple-100">Luxury event planning services that turn your dreams into reality</p>
+
+       <button id="cta-button" class="bg-white text-purple-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-50 transition-colors shadow-lg">
+         Plan Your Event
+       </button>
+     </div>
+   </section>
+
+   <!-- Services Section -->
+   <section id="services" class="py-20 px-6 bg-gray-50">
+     <div class="max-w-7xl mx-auto">
+       <h3 id="services-title" class="text-4xl font-bold text-center mb-16 text-gray-800">Our Premium Services</h3>
+
+       <div class="grid md:grid-cols-3 gap-8">
+         <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center">
+           <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6"><span class="text-3xl">💍</span></div>
+           <h4 class="text-2xl font-bold mb-4 text-gray-800">Weddings</h4>
+           <p class="text-gray-600">Elegant wedding ceremonies and receptions that celebrate your love story with sophistication and style.</p>
+         </div>
+
+         <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center">
+           <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6"><span class="text-3xl">🎉</span></div>
+           <h4 class="text-2xl font-bold mb-4 text-gray-800">Corporate Events</h4>
+           <p class="text-gray-600">Professional corporate gatherings, conferences, and galas that impress clients and inspire teams.</p>
+         </div>
+
+         <div class="service-card bg-white p-8 rounded-lg shadow-lg text-center">
+           <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6"><span class="text-3xl">🎂</span></div>
+           <h4 class="text-2xl font-bold mb-4 text-gray-800">Special Celebrations</h4>
+           <p class="text-gray-600">Milestone birthdays, anniversaries, and private parties designed to create lasting memories.</p>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- About Section -->
+   <section id="about" class="py-20 px-6 bg-white">
+     <div class="max-w-7xl mx-auto">
+       <div class="grid md:grid-cols-2 gap-12 items-center">
+         <div>
+           <h3 class="text-4xl font-bold mb-6 text-gray-800">Why Choose Diamond Events?</h3>
+           <div class="space-y-6">
+             <div class="flex items-start space-x-4">
+               <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span class="text-white text-sm">✓</span></div>
+               <div>
+                 <h4 class="font-semibold text-lg text-gray-800">Luxury Experience</h4>
+                 <p class="text-gray-600">Premium vendors and exclusive venues for extraordinary events</p>
+               </div>
+             </div>
+
+             <div class="flex items-start space-x-4">
+               <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span class="text-white text-sm">✓</span></div>
+               <div>
+                 <h4 class="font-semibold text-lg text-gray-800">Personalized Service</h4>
+                 <p class="text-gray-600">Tailored planning that reflects your unique vision and style</p>
+               </div>
+             </div>
+
+             <div class="flex items-start space-x-4">
+               <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span class="text-white text-sm">✓</span></div>
+               <div>
+                 <h4 class="font-semibold text-lg text-gray-800">Stress-Free Planning</h4>
+                 <p class="text-gray-600">Complete coordination so you can enjoy your special day</p>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <div class="text-center">
+           <div class="bg-gradient-to-br from-purple-400 to-purple-600 w-80 h-80 rounded-full mx-auto flex items-center justify-center shadow-2xl">
+             <svg class="w-32 h-32 text-white diamond-sparkle" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+               <path d="M12 2L8 8h8l-4-6zm0 20l4-6H8l4 6zm10-10l-6-4v8l6-4zM2 12l6 4V8l-6 4z" />
+             </svg>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- Contact Section -->
+   <section id="contact" class="py-20 px-6 gradient-bg text-white">
+     <div class="max-w-7xl mx-auto text-center">
+       <h3 id="contact-title" class="text-4xl font-bold mb-8">Let's Create Magic Together</h3>
+       <p class="text-xl mb-12 text-purple-100">Ready to plan your dream event? Get in touch with our expert team today.</p>
+
+       <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+         <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+           <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-2xl">📞</span></div>
+           <h4 class="text-xl font-semibold mb-2">Call Us</h4>
+           <p id="phone-number" class="text-purple-100">(555) 123-4567</p>
+         </div>
+
+         <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+           <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4"><span class="text-2xl">✉️</span></div>
+           <h4 class="text-xl font-semibold mb-2">Email Us</h4>
+           <p id="email-address" class="text-purple-100">hello@diamondevents.com</p>
+         </div>
+       </div>
+
+       <div class="mt-12">
+         <button class="bg-white text-purple-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-50 transition-colors shadow-lg">Schedule Consultation</button>
+       </div>
+     </div>
+   </section>
+
+  </main>
+
+  <footer class="bg-gray-900 text-white py-8 px-6">
+   <div class="max-w-7xl mx-auto text-center">
+     <div class="flex items-center justify-center space-x-2 mb-4">
+       <svg class="w-6 h-6 diamond-sparkle" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L8 8h8l-4-6zm0 20l4-6H8l4 6zm10-10l-6-4v8l6-4zM2 12l6 4V8l-6 4z" /></svg>
+       <span class="font-semibold">Diamond Event Planning</span>
+     </div>
+
+     <p class="text-gray-400">© 2025 Diamond Event Planning. Creating extraordinary moments since 2010.</p>
+   </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Button click feedback
+    document.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', function(e) {
+        // small interaction effect
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => { this.style.transform = ''; }, 150);
+      });
+    });
+  </script>
+ </body>
+</html>
